@@ -1,5 +1,4 @@
 /* Typography */
-
 html {
 	font-family: 'Roboto', sans-serif;
 }
@@ -33,23 +32,29 @@ html {
 }
 
 /* Custom Styles */
+body{
+	background-color: #242324;
+        color: #eee;
+}
 
-main {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	justify-content: center;
-	padding: 0 30px;
+#content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 400px;
+	height: 400px;
+	margin-left: -200px;
+	margin-top: -150px;
 	text-align: center;
 }
 
-main > .intro {
+#content > .intro {
 	font-family: 'Reem Kufi', sans-serif;
-	font-size: 3.75em;
-	font-weight: 600;
+	font-size: 3.1em;
+	font-weight: 20;
 }
 
-main > .tagline {
+#content > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
@@ -68,4 +73,12 @@ main > .tagline {
 	margin-left: 0.675rem;;
 	width: 2.65rem;
 	height: 2.65rem;
+}
+
+.icons-social a {
+	color: #FAFAFA;
+}
+
+.icons-social a svg path{
+	fill: #FAFAFA;
 }
