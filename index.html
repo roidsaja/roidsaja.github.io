@@ -11,26 +11,30 @@
 	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
-
+	<link rel="stylesheet" href="css/themes/light-mode.css" id="theme">
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
 </head>
 
 <body>
 	<div id="background">
-	<div id="content">
-		<div class="intro">Hello, I'm Roid!</div>
-		<div class="tagline">Bengkel Linux | Computer Science <i class="fab fa-linux"></i> | Software Engineer</div>
-		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-		<br>
-		<div class="icons-social">
-			<a target="_blank" href="https://github.com/roidsaja"><i class="fab fa-github"></i></a>
-			<a target="_blank" href="https://twitter.com/okroid"><i class="fab fa-twitter"></i></a>
-			<a target="_blank" href="https://dev.to/okroid"><i class="fab fa-dev"></i></a>
-			<a target="_blank" href="https://www.linkedin.com/in/roid-maulana-92112a17b"><i
-					class="fab fa-linkedin"></i></a>
+		<div id="content">
+			<div class="intro"><b>&quot; Hello, I'm</b> Roid<b>! &quot;</b></div>
+			<div class="tagline">Bengkel Linux <i class="fab fa-linux"></i> | Computer Science | Software Engineer</div>
+			<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+			<br>
+			<div class="icons-social">
+				<a target="_blank" href="https://github.com/roidsaja"><i class="fab fa-github"></i></a>
+				<a target="_blank" href="https://twitter.com/okroid"><i class="fab fa-twitter"></i></a>
+				<a target="_blank" href="https://dev.to/okroid"><i class="fab fa-dev"></i></a>
+				<a target="_blank" href="https://www.linkedin.com/in/roid-maulana-92112a17b"><i class="fab fa-linkedin"></i></a>
+			</div>
+			<div id="btn-theme">
+				<button onclick="switchSheet();">Change View</button>
+			</div>
 		</div>
 	</div>
-	</div>
+
+	<script src="js/theme-change.js"></script>
 	<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script>
 		particlesJS("background", {
@@ -42,7 +46,7 @@
 						"value_area": 777
 					}
 				},
-				"color": { "value": "#ff7" },
+				"color": { "value": "#47f" },
 				"shape": {
 					"type": "triangle",
 					"stroke": { "width": 0.1, "color": "#000000" },

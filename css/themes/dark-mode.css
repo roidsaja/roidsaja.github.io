@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color:#fff;
 }
 
 @media (min-width: 576px) {
@@ -31,14 +32,51 @@
 	}
 }
 
+
+@media (max-width: 640px) {
+    button {
+        margin-top: 5%;
+    }
+}
+
 .icons-social i {
 	font-size: 3em;
 }
 
 /* Custom Styles */
-body{
-	background-color: #242324;
-    color: #eee;
+body {
+    background: rgb(19, 18, 18);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 1em;
+    margin-top: 1%;
+    outline: none;
+    
+}
+
+button:hover {
+    background: rgb(45, 50, 102);
+    color: rgb(255, 255, 255);
+}
+
+#btn-theme {
+    display: flex;
+    justify-content: center;
 }
 
 #content {
@@ -54,14 +92,24 @@ body{
 
 #content > .intro {
 	font-family: 'Reem Kufi', sans-serif;
-	font-size: 3.1em;
-	font-weight: 20;
+	font-size: 2.6em;
+    font-weight: 20;
+    color:#fff;
 }
 
 #content > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .icons-social i {
@@ -86,3 +134,7 @@ body{
 .icons-social a svg path{
 	fill: #FAFAFA;
 }
+
+
+
+
