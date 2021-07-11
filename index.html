@@ -166,14 +166,23 @@
 	<!--Experiences-->
 	<section class="experiences">
 		<div class="container pad-y">
-			<h2 id="experience" class="flex flex-jc-c">Experience</h2>
-			<div class="work__container pad-x-lg">
-				<div class="work__content">
-					<div class="work__content_section visible" data-tab="1">
-						<h3>Freelance Back-End Developer<span class="work__company_name"> @ PT Dgas Alam Semesta</span>
+			<h2 id="experience" class="flex flex-jc-c">Experiences</h2>
+			<div class="experiences__container pad-x-lg">
+				<div class="experiences__tabs">
+					<button class="tab tab-1 active" href="#" data-tab="1">PT Dgas</button>
+					<button class="tab tab-2" href="#" data-tab="2">PT DI</button>
+					<span class="highlighter"></span>
+				</div>
+			</div>
+			<div class="experiences__container pad-x-lg">
+				<div class="experiences__content">
+					<div class="experiences__content_section visible" data-tab="1">
+						<h3>Freelance Back-End Developer<span class="experiences__company_name"> @ PT Dgas Alam
+								Semesta</span>
 						</h3>
-						<p class="work__duration">Mar 2021 ~ Present<span class="work__remote">// Remote Work</span></p>
-						<ul class="work__description">
+						<p class="experiences__duration">Mar 2021 ~ Present<span class="experiences__remote">// Remote
+								Work</span></p>
+						<ul class="experiences__description">
 							<li>
 								<p>
 									Collaborated closely with the product owner and the development team to create an
@@ -199,11 +208,12 @@
 							</li>
 						</ul>
 					</div>
-					<div class="work__content_section" data-tab="2">
-						<h3>Data Warehouse Engineer Internship<span class="work__company_name"> @ PT Dirgantara
+					<div class="experiences__content_section" data-tab="2">
+						<h3>Data Warehouse Engineer Internship<span class="experiences__company_name"> @ PT Dirgantara
 								Indonesia</span></h3>
-						<p class="work__duration">Sep 2020 ~ Dec 2020<span class="work__remote">// Remote Work</p>
-						<ul class="work__description">
+						<p class="experiences__duration">Sep 2020 ~ Dec 2020<span class="experiences__remote">// Remote
+								Work</p>
+						<ul class="experiences__description">
 							<li>
 								<p>
 									Proposed and developed a dataware house solution in the form of an user-friendly
@@ -233,7 +243,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="work__resume">
+			<div class="experiences__resume">
 				<p>Interested in my full resume?</p>
 				<a class="outline-btn resume-btn" href="#" target="_blank" rel="noreferrer">
 					<span class="material-icons no-select" aria-hidden="true">get_app</span>
@@ -249,12 +259,90 @@
 
 	<!--Contact Me-->
 	<section class="contact">
-
+		<div class="container pad-y pad-x-lg">
+			<h2 id="contact" class="flex flex-jc-c">Contact Me</h2>
+			<p class="contact__message">
+			  Thank you for visiting my site! If you’re looking for a software developer, have a question or want to say
+			  hi, feel free to shoot me an email!
+			</p>
+			<a class="contact__email outline-btn email-btn" href="mailto:roid0520@gmail.com">
+			  <span class="material-icons no-select" aria-hidden="true">mail_outline</span>
+			  <span class="outline-btn-text">Get in Touch</span></a
+			>
+			<button class="contact__copy_email flex flex-ai-c">
+			  <span class="material-icons no-select" aria-hidden="true">content_copy</span>
+			  <span class="copy-btn-text">Copy Email Address</span>
+			</button>
+			<p class="contact__info_box copy-success has-fade">Copied to clipboard</p>
+			<p class="contact__info_box copy-fail has-fade">Copy failed. Try again!</p>
+		  </div>
 	</section>
 
 	<!--Footer-->
 	<footer class="footer">
-		
+		<div class="container pad-x-lg">
+			<ul class="footer__social_links flex flex-jc-c">
+			  <li>
+				<a
+				  id="github"
+				  class="footer__link_item"
+				  href="https://github.com/roidsaja"
+				  title="GitHub"
+				  target="_blank"
+				  rel="noreferrer"
+				>
+				  <img src="./images/github.svg" loading="lazy" alt="GitHub" />
+				</a>
+			  </li>
+			  <li>
+				<a
+				  id="twitter"
+				  class="footer__link_item"
+				  href="https://twitter.com/okroid"
+				  title="Twitter"
+				  target="_blank"
+				  rel="noreferrer"
+				>
+				  <img src="./images/twitter.svg" loading="lazy" alt="Twitter" />
+				</a>
+			  </li>
+			  <li>
+				<a
+				  id="linkedin"
+				  class="footer__link_item"
+				  href="https://www.linkedin.com/in/roid-maulana-92112a17b"
+				  title="LinkedIn"
+				  target="_blank"
+				  rel="noreferrer"
+				>
+				  <img src="./images/linkedin.svg" loading="lazy" alt="LinkedIn" />
+				</a>
+			  </li>
+			  <li>
+				<a
+				  id="devto"
+				  class="footer__link_item"
+				  href="https://dev.to/okroid"
+				  title="Devto"
+				  target="_blank"
+				  rel="noreferrer"
+				>
+				  <img src="./images/devto.svg" loading="lazy" alt="Devto" />
+				</a>
+			  </li>
+			</ul>
+			<a class="footer__scroll_top flex flex-ai-c flex-jc-c" href="#" aria-label="Scroll to Top">
+			  <span class="material-icons no-select">expand_less</span>
+			</a>
+			<p class="footer__scroll_top_text">Scroll to Top</p>
+			<a
+			  class="footer__source_link text-link"
+			  href="https://github.com/roidsaja/roidsaja.github.io"
+			  target="_blank"
+			  rel="noreferrer"
+			  >View Source on GitHub</a
+			>
+		  </div>
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
