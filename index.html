@@ -1,111 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="A software developer focused on building applications and websites with stunning interfaces and experiences." />
+	<meta name="keywords" content="software, developer, web, website, frontend, backend, application, portfolio" />
+	<meta name="theme-color" content="#21555B" />
+	<meta property="og:url" content="https://roidmaulana.dev/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Roid Burhan Maulana | Software Developer" />
+	<meta property="og:description"
+		content="A software developer focused on building applications and websites with stunning interfaces and experiences." />
+	<meta property="og:image" content="./favicons/android-chrome-256x256.png" />
+	<meta property="og:site_name" content="Roid Burhan Maulana | Software Developer" />
 
-	<title>Roid | Dev</title>
+	<title>Roid Burhan Maulana | Software Developer</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/themes/light-mode.css" id="theme">
-	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@400;500&display=swap"
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+	<link rel="manifest" href="./site.webmanifest" />
+	<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#21555B" />
 </head>
 
 <body>
-	<div id="background">
-		<div id="content">
-			<div class="intro"><b>&quot; Hello, I'm</b> Roid<b>! &quot;</b></div>
-			<div class="tagline">Bengkel Linux <i class="fab fa-linux"></i> | Computer Science | Software Engineer</div>
-			<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-			<br>
-			<div class="icons-social">
-				<a target="_blank" href="https://github.com/roidsaja"><i class="fab fa-github"></i></a>
-				<a target="_blank" href="https://twitter.com/okroid"><i class="fab fa-twitter"></i></a>
-				<a target="_blank" href="https://dev.to/okroid"><i class="fab fa-dev"></i></a>
-				<a target="_blank" href="https://www.linkedin.com/in/roid-maulana-92112a17b"><i class="fab fa-linkedin"></i></a>
-			</div>
-			<div id="btn-theme">
-				<button onclick="switchSheet();">Change View</button>
-			</div>
-		</div>
-	</div>
+	<!--Navbar-->
+	<header class="header">
+		<div class="header__overlay has-fade"></div>
+      <div class="container">
+        <nav class="flex flex-ai-c flex-jc-sb pad-x-lg">
+          <a href="#" class="nav__logo">
+            <img src="#" alt="Logo" width="106" height="19" />
+          </a>
+          <ul class="nav__links hide-md-down flex">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
 
-	<script src="js/theme-change.js"></script>
-	<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<script>
-		particlesJS("background", {
-			"particles": {
-				"number": {
-					"value": 333,
-					"density": {
-						"enable": true,
-						"value_area": 777
-					}
-				},
-				"color": { "value": "#47f" },
-				"shape": {
-					"type": "triangle",
-					"stroke": { "width": 0.1, "color": "#000000" },
-					"polygon": { "nb_sides": 7 }
-				},
-				"opacity": {
-					"value": 0.7,
-					"random": true,
-					"anim": {
-						"enable": true,
-						"speed": 1,
-						"opacity_min": 0,
-						"sync": false
-					}
-				},
-				"size": {
-					"value": 4,
-					"random": true,
-					"anim": {
-						"enable": false,
-					}
-				},
-				"line_linked": {
-					"enable": false,
-				},
-				"move": {
-					"enable": true,
-					"speed": 1,
-					"direction": "none",
-					"random": true,
-					"straight": false,
-					"out_mode": "out",
-					"attract": {
-						"enable": false,
-						"rotateX": 777,
-						"rotateY": 420
-					}
-				}
-			},
-			"interactivity": {
-				"detect_on": "window",
-				"events": {
-					"onhover": { "enable": true, "mode": "bubble" },
-					"onclick": { "enable": false },
-					"resize": true
-				},
-				"modes": {
-					"bubble": {
-						"distance": 400,
-						"size": 0,
-						"duration": 2,
-						"opacity": 0.9,
-						"speed": 3
-					}
-				}
-			},
-			"retina_detect": true
-		});
-	</script>
+          <!-- Menu icon -->
+          <button id="hamburger" class="nav__menu hide-lg-up" aria-label="Menu button">
+            <div class="nav__hamburger"></div>
+          </button>
+
+          <!-- Mobile menu  -->
+          <div class="nav__mobile_menu hide-lg-up">
+            <ul class="nav__mobile_links">
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+	</header>
+
+	<!--Hero-->
+	<section class="hero">
+		<div class="container">
+        <div class="hero__terminal">
+          <div class="hero__traffic_light"></div>
+          <div class="hero__terminal_container">
+            <div class="hero__title flex">
+              <img
+                id="hero__chevron1"
+                class="green-chevron"
+                src="./images/green_chevron_right.svg"
+                aria-hidden="true"
+              />
+              <h1 id="hero__title1" class="hero__title_text" aria-label="Hi, I'm Roid!"></h1>
+            </div>
+            <div class="hero__title flex">
+              <img
+                id="hero__chevron2"
+                class="green-chevron invisible"
+                src="./images/green_chevron_right.svg"
+                aria-hidden="true"
+              />
+              <h1 id="hero__title2" class="hero__title_text invisible">I'm a computer science student and a software developer.</h1>
+            </div>
+            <div class="hero__content invisible">
+              <p class="hero__description">
+                I’m in my last year as a student from IULI who is passionate about building websites and applications with stunning interfaces and
+                experiences.
+              </p>
+              <div class="hero__cta">
+                <a class="outline-btn email-btn" href="mailto:roid05200@gmail.com">
+                  <span class="material-icons no-select" aria-hidden="true">mail_outline</span>
+                  <span class="outline-btn-text">Get in Touch</span></a
+                >
+                <a class="outline-btn resume-btn" href="#" target="_blank" rel="noreferrer">
+                  <span class="material-icons no-select" aria-hidden="true">get_app</span>
+                  <span class="outline-btn-text">Resume</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</section>
+
+	<!--About-->
+	<section class="about">
+
+	</section>
+
+	<!--Experiences-->
+	<section class="experiences">
+
+	</section>
+
+	<!--Projects-->
+	<section class="project">
+
+	</section>
+
+	<!--Contact Me-->
+	<section class="contact">
+
+	</section>
+
+	<!--Footer-->
+	<footer class="footer">
+
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="app/js/script.js"></script>
 </body>
 
 </html>
