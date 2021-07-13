@@ -409,11 +409,11 @@ ul {
   top: 0;
   z-index: 999;
   box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2);
-  background-color: #21555b;
+  background-color: #436069;
   color: #ffffff;
 }
 .header.open .nav__hamburger {
-  background-color: #21555b;
+  background-color: #436069;
 }
 .header.open .nav__hamburger::before {
   transform: translateY(-7px) rotate(45deg);
@@ -507,7 +507,7 @@ nav div.nav__mobile_menu {
   transition: all 250ms ease-in-out;
   height: 0rem;
   overflow: hidden;
-  background-color: #21555b;
+  background-color: #436069;
 }
 nav .nav__mobile_links {
   padding-left: 0;
